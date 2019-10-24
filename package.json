@@ -1,0 +1,40 @@
+{
+  "name": "single-spa-react",
+  "version": "1.0.0",
+  "description": "Single SPA React ",
+  "main": "single-spa.config.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build":"webpack --config webpack.config.js -p",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donaldkibet/single-spa-react.git"
+  },
+  "keywords": [
+    "single-spa",
+    "react"
+  ],
+  "author": "Donald Kibet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donaldkibet/single-spa-react/issues"
+  },
+  "homepage": "https://github.com/donaldkibet/single-spa-react#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "html-loader": "^0.5.5",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
