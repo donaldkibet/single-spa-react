@@ -1,11 +1,11 @@
 {
-  "name": "single-spa-react",
+  "name": "single-spa-react-demo",
   "version": "1.0.0",
   "description": "Single SPA React ",
   "main": "single-spa.config.js",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build":"webpack --config webpack.config.js -p",
+    "start": "webpack-dev-server --open",
+    "build": "webpack --config webpack.config.js -p",
     "test": "test"
   },
   "repository": {
@@ -22,8 +22,16 @@
     "url": "https://github.com/donaldkibet/single-spa-react/issues"
   },
   "homepage": "https://github.com/donaldkibet/single-spa-react#readme",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
+    "react-transition-group": "^4.3.0",
+    "single-spa": "^4.4.1",
+    "single-spa-react": "^2.10.2"
+  },
   "devDependencies": {
+    "@babel/core": "^7.6.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.6.3",
