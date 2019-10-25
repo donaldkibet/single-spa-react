@@ -5,6 +5,9 @@ language: nodejs
 nodejs:
   -"12"
 
+before_install:
+  - sudo apt-get -y install libxml2-dev
+
 addons:
   apt:
     sources:
