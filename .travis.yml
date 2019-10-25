@@ -1,0 +1,28 @@
+dist: xenial
+sudo: false
+
+language: nodejs
+nodejs:
+  -"12"
+
+addons:
+  apt:
+    sources:
+    - google-chome
+    packages:
+    - google-chrome-stable
+
+cache:
+  directories:
+  - ./node_modules
+
+install:
+  - npm install firebase-tools
+  - npm install
+
+scripts:
+  - npm run start
+  - npm run build
+
+after_success:
+  - firebase-deploy --token
