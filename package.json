@@ -5,8 +5,7 @@
   "main": "single-spa.config.js",
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "webpack --config webpack.config.js -p",
-    "test": "test"
+    "build": "webpack --config webpack.config.js -p"
   },
   "repository": {
     "type": "git",
